@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family:cursive; 
+    box-sizing: border-box;
+    /* background-color: #f0f8ff; */
+}
+
+#navbar-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+    list-style-type: none;
+    border-bottom: 1px solid orange;
+    border-width: 3px;
+    box-shadow: 0 4px 8px rgba(47, 21, 192, 0.3);
+}
+
+header a {
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+}
+
+#navbar-list li{
+    padding: .8em;
+    transform: scale(.98);
+    transition: ease-in-out 0.3s;
+}
+
+#navbar-list li:hover {
+    background-color: rgba(0, 0, 0, 0.08);
+    transform: scale(1);
+    cursor: pointer;
+}
+
+/* intro section */
+
+.text {
+    margin: 4%;
+    box-shadow: 0 4px 8px rgba(47, 21, 192, 0.3);
+    ;
+}
+
+.circle img {
+    width: 20%;
+    border-radius: 200%;
+}
+
+.titletext {
+    text-align: center;
+    margin: 10px;
+}
+
+.titletext h4 {
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+.titletext h2 {
+    font-size: 30px;
+}
+
+.abouttext h6 {
+    font-weight: 5px;
+    font-size: 20px;
+    /* font-family: 'Times New Roman', Times, serif; */
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+
+/* <!-- About me Section--> */
+.aboutme {
+    margin: 4%;
+    box-shadow: 0 4px 8px rgba(47, 21, 192, 0.3);
+}
+
+.aboutme p {
+    margin: 15px;
+    padding-bottom: 15px;
+}
+
+/* skills section  */
+
+.skills {
+    margin: 4%;
+    box-shadow: 0 4px 8px rgba(47, 21, 192, 0.3);
+}
+
+.skills img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.picture {
+    display: inline-flex;
+    margin: 20px;
+}
+
+.skillname {
+    font-size: 20px;
+    margin: 10px;
+}
+
+
+#Skills .picture {
+    padding: .8em;
+    transform: scale(.98);
+    transition: ease-in-out 0.3s;
+}
+
+#Skills .picture:hover {
+    background-color: rgba(0, 0, 0, 0.08);
+    transform: scale(1);
+    cursor: pointer;
+}
+
+/* .education */
+
+.education {
+    margin: 4%;
+    box-shadow: 0 4px 8px rgba(47, 21, 192, 0.3);
+
+}
+
+.pt-5 {
+    font-size: 20px;
+    padding: 20px;
+}
+
+.mb-1 {
+    font-size: 20px;
+    padding: 3px;
+}
+
+.heading {
+    margin-left: 20px;
+    padding: 5px;
+    font-size: 40px;
+    border-bottom: 4px solid skyblue;
+    display: inline-block;
+}
+
+/* .experience */
+
+.experience {
+    margin: 4%;
+    box-shadow: 0 4px 8px rgba(47, 21, 192, 0.3);
+}
+
+/* contact section and footer  */
+
+#contact {
+    background-color: #000;
+    display: flex;
+    align-items: baseline;
+    font-size: 1.8rem;
+    justify-content: center;
+}
+
+#contact a {
+    color: #525252;
+    padding-right: 1rem;
+    padding: 1rem;
+}
+
+#contact a:hover {
+    color: white;
+    transform: scale(1.2);
+}
+
+#uparrow {
+    font-size: 2.4rem;
+    transform: scale(.97);
+}
+
+a #uparrow {
+    padding: 1rem 0rem;
+    transform: scale(.99);
+    transition: ease-in-out .6s;
+}
+
+#uparrow:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    transform: scale(1) !important;
+}
+
+
+/* Adjustments for mobile devices - navbar*/
+@media only screen and (max-width: 600px) {
+    #navbar {
+        display: none;
+        position: relative;
+    }
+
+    #navbar.show {
+        display: block;
+    }
+
+    #navbar-toggle {
+        display: block;
+        text-align: center;
+        background-color: #f9f9f9;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+
+    #navbar-toggle span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: black;
+        margin-bottom: 5px;
+    }
+
+    #navbar-list {
+        flex-direction: column;
+        flex-wrap: wrap;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+    }
+
+    #navbar-list li {
+        text-align: center;
+        padding: 5px;
+    }
+
+    #navbar-list li a {
+        text-decoration: none;
+        color: black;
+        font-size: 16px;
+    }
+
+
+/* intro text */
+
+.abouttext h6 {
+    font-weight: 2px;
+    font-size: 15px;
+}
+
+.mb-1 , h4 , .pt-5  {
+    font-size: 15px;
+}
+
+.skillname{
+    font-size: 16px;
+}
+
+.heading {
+    font-size: 28px;
+}
+
+.titletext h4 {
+    font-size: 15px;
+}
+
+.titletext h2 {
+    font-size: 23px;
+}
+
+#contact a {
+    padding: 8px;
+    font-size: 1.3rem;
+}
+
+}
